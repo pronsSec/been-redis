@@ -27,7 +27,7 @@ sudo apt-get install redis-tools
 
 Clone the repository to your local machine using:
 
-git clone https://github.com/your-username/redis-vulnerability-scanner.git && cd redis-vulnerability-scanner
+git clone https://github.com/pronsSec/been-redis.git && cd redis-vulnerability-scanner
 
 ## Usage
 
